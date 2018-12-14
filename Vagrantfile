@@ -1,5 +1,3 @@
-require 'yaml'
-
 projectPath = ENV["PWD"]
 
 localPath = File.dirname(__FILE__)
