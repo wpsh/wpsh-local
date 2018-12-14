@@ -13,14 +13,14 @@ Use this package to quickly add a development environment to your project.
 
 1. Add this package to your project using [Composer](https://getcomposer.org):
 
-        composer require --dev wpsh/local
+       composer require --dev wpsh/local
 
 2. Add `Vagrantfile` to the root of your project with the following contents:
 
-        load File.join(
-            File.dirname(__FILE__),
-            'vendor/wpsh/local/Vagrantfile'
-        )
+       load File.join(
+           File.dirname(__FILE__),
+           'vendor/wpsh/local/Vagrantfile'
+       )
 
     where `vendor/wpsh/local` is the relative path to this packge.
 
