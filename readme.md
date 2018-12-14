@@ -11,13 +11,27 @@ Use this package to quickly add a development environment to your project.
 
 ## Install
 
-Using [Composer](https://getcomposer.org):
+1. Add this package to your project using [Composer](https://getcomposer.org):
 
-    composer require --dev wpsh/local
+        composer require --dev wpsh/local
 
-Using [npm](https://www.npmjs.com/get-npm):
+2. Add `Vagrantfile` to the root of your project with the following contents:
 
-    npm install @wpsh/local
+        load File.join(
+            File.dirname(__FILE__),
+            'vendor/wpsh/local/Vagrantfile'
+        )
+
+    where `vendor/wpsh/local` is the relative path to this packge.
+
+3. Create `docker-compose.yaml` in the root of your project to define the virtual environment.
+
+
+## To Do
+
+- Add support for installing via `npm`.
+- Automatically create the project `Vagrantfile` on the first install.
+- Add examples of `docker-compose.yaml` for various projects.
 
 
 ## Credits
