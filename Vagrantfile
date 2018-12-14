@@ -1,12 +1,11 @@
 projectPath = ENV["PWD"]
-
 localPath = File.dirname(__FILE__)
 
 Vagrant.configure(2) do |config|
 
   config.vm.box = "ubuntu/xenial64"
   config.vm.network "private_network", type: "dhcp"
-  config.vm.synced_folder projectPath, "/vagrant/project", create: true
+  config.vm.synced_folder projectPath, "/vagrant"
 
   # Get rid of ubuntu-xenial-16.04-cloudimg-console.log
   config.vm.provider "virtualbox" do |vb|
