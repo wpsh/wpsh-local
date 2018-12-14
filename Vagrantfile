@@ -1,6 +1,6 @@
 require 'yaml'
 
-devEnvDir = File.dirname(__FILE__)
+localPath = File.dirname(__FILE__)
 
 Vagrant.configure(2) do |config|
 
@@ -14,10 +14,10 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision :shell,
-    path: File.join(devEnvDir, 'scripts/vagrant/provision.sh')
+    path: File.join(localPath, 'scripts/vagrant/provision.sh')
 
   config.vm.provision :shell, 
-    path: File.join(devEnvDir, 'scripts/vagrant/up.sh'), 
+    path: File.join(localPath, 'scripts/vagrant/up.sh'), 
     run: "always"
 
 end
