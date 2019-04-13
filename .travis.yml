@@ -4,7 +4,7 @@ install:
   - bundle install
 
 script:
-  - shellcheck **/*.sh
+  - shellcheck *.sh
   - rubocop
 
 notifications:
