@@ -1,7 +1,11 @@
-language: shell
+language: ruby
+
+install:
+  - bundle install
 
 script:
   - shellcheck **/*.sh
+  - rubocop
 
 notifications:
   email: false
