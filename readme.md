@@ -1,6 +1,6 @@
 # Local Development Environment
 
-Use this package to quickly add a development environment to your project.
+Add this to any project with `docker-compose.yaml` to run the containers inside Vagrant. Useful for creating friendly development environments with beautiful hostnames (no port numbers) that don't require Docker on the host machine.
 
 
 ## Requirements
