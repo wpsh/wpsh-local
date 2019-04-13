@@ -5,8 +5,12 @@ Add this to any project with `docker-compose.yaml` to run the containers inside 
 
 ## Requirements
 
-- [Vagrant](https://www.vagrantup.com/)
-- [VirtualBox](https://www.virtualbox.org/)
+- [Vagrant](https://www.vagrantup.com)
+- [VirtualBox](https://www.virtualbox.org)
+
+We suggest using [Homebrew](https://brew.sh) to install the dependencies:
+
+	brew cask install virtualbox vagrant
 
 
 ## Install
