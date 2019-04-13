@@ -21,6 +21,11 @@ We suggest using [Homebrew](https://brew.sh) to install the dependencies:
 
 2. Add `Vagrantfile` to the root of your project with the following contents:
 
+		# Configure the hostname.
+		Vagrant.configure(2) do |config|
+		  config.vm.hostname = 'wpsh-local'
+		end
+
 		load File.join(
 		  File.dirname(__FILE__),
 		  'vendor/wpsh/local/Vagrantfile'
@@ -30,6 +35,11 @@ We suggest using [Homebrew](https://brew.sh) to install the dependencies:
 
 3. Create `docker-compose.yaml` in the root of your project to define the virtual environment.
 
+
+## Examples
+
+- See [`examples/wordpress`](examples/wordpress) for a sample WordPress development environment.
+- [Block Context WordPress plugin](https://github.com/preseto/block-context).
 
 ## To Do
 
