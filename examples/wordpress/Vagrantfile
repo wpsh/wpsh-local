@@ -1,0 +1,4 @@
+load File.join(
+  File.dirname(__FILE__),
+  'vendor/wpsh/local/Vagrantfile'
+)
