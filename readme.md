@@ -43,6 +43,12 @@ We suggest using [Homebrew](https://brew.sh) to install the dependencies:
 - See [`examples/wordpress`](examples/wordpress) for a sample WordPress development environment.
 - [Block Context WordPress plugin](https://github.com/preseto/block-context).
 
+
+## Development
+
+[Travis CI](https://travis-ci.com/wpsh/wpsh-local) lints all shell scripts in `scripts/vagrant` using [shellcheck](https://www.shellcheck.net) and `Vagrantfile` (and other Ruby files) using [rubocop](https://github.com/rubocop-hq/rubocop).
+
+
 ## To Do
 
 - Add support for installing via `npm`.
