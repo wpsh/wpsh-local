@@ -16,7 +16,7 @@ Vagrant.configure(2) do |config|
     path: File.join(localPath, 'scripts/vagrant/provision.sh')
 
   config.vm.provision :shell,
-    path: File.join(localPath, 'scripts/vagrant/up.sh'), 
+    path: File.join(localPath, 'scripts/vagrant/up.sh'),
     run: "always"
 
 end
