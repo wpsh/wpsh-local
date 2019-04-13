@@ -31,7 +31,6 @@ Add this to any project with `docker-compose.yaml` to run the containers inside 
 
 - Add support for installing via `npm`.
 - Automatically create the project `Vagrantfile` on the first install.
-- Add examples of `docker-compose.yaml` for various projects.
 
 
 ## Credits
