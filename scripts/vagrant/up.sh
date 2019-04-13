@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-cd /vagrant
+# See https://github.com/koalaman/shellcheck/wiki/SC2164 for why the exit.
+cd /vagrant || exit
 
 docker-compose up --detach --remove-orphans
 
