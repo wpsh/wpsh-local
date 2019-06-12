@@ -31,3 +31,6 @@ for repo_set in "${REPOS[@]}"; do
 		fi
 	done <<< "$repo_set"
 done
+
+# Add user vagrant to the docker group to avoid needing sudo.
+usermod -a -G docker vagrant
