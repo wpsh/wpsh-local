@@ -3,5 +3,15 @@
   "description": "A Docker Compose development environment for any project.",
   "type": "library",
   "license": "MIT",
-  "require": {}
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "WPSH\\Local\\": "scripts/composer/"
+    }
+  },
+  "scripts": {
+    "post-package-install": [
+      "WPSH\\Local\\Package::postPackageInstall"
+    ]
+  }
 }
