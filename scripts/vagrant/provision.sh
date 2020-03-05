@@ -4,7 +4,7 @@ set -e
 
 # Map binary name to source URL.
 REPOS=(
-	"docker-compose,https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)"
+	"docker-compose,https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)"
 )
 
 # Add the Docker repo.
